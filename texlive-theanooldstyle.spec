@@ -1,6 +1,6 @@
 Name:		texlive-theanooldstyle
 Version:	64519
-Release:	1
+Release:	2
 Summary:	Theano OldStyle fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/theanooldstyle
