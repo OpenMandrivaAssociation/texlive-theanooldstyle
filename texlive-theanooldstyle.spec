@@ -3,7 +3,7 @@ Version:	64519
 Release:	2
 Summary:	Theano OldStyle fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/theanooldstyle
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/theanooldstyle
 License:	ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/theanooldstyle.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/theanooldstyle.doc.r%{version}.tar.xz
