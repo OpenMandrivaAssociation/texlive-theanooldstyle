@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/theanooldstyle.r
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/theanooldstyle.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides the Theano OldStyle font designed by Alexey
@@ -22,3 +23,10 @@ variant has been provided but there are no italic variants. The package
 is named after Theano, a famous Ancient Greek woman philosopher, who was
 first a student of Pythagoras, and supposedly became his wife.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from theanooldstyle:
+Map TheanoOldStyle.map
+TL_DROPIN_EOF
